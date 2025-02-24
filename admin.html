@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Internal Styling -->
+    <style>
+        h1 {
+            font-family: 'Playwrite IT Moderna', serif;
+        }
+
+        h2 {
+            font-family: 'Catamaran', serif;
+        }
+
+        #button {
+            width: 180px;
+        }
+
+        #section1, #section2, #section3, #section4 {
+            background-color: #e28743;
+            border-radius: 5%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 350px;
+            height: 250px;
+            margin: 10px 10px 10px 10px;
+        }
+
+        #chart {
+            width: 300px;
+        }
+
+        #chat {
+            width: 240px;
+        }
+
+        /* Animated Text */
+        .masked-text {
+            font-size: 8rem;
+            font-weight: bold;
+            color: transparent;
+            background-image: url('https://images.unsplash.com/photo-1732535725600-f805d8b33c9c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+            background-size: 200%; /* Enlarged for smooth animation */
+            background-position: 0 50%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: animate-background 5s infinite alternate linear;
+        }
+
+        @keyframes animate-background {
+            0% {
+            background-position: 0 50%;
+        }
+            100% {
+            background-position: 100% 50%;
+        }
+    }
+
+    </style>
+
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container" id="main">
+        <div class="container" id="header">
+            <h1>Red Books</h1>
+            <h2>Admin Dashboard</h2>
+         </div>
+            <div class="container" id="smallNavigation">
+                <button type="button" class="btn btn-light" id="button">Home</button>
+                <button type="button" class="btn btn-light" id="button">Books</button>
+                <button type="button" class="btn btn-light" id="button">Events</button>
+                <button type="button" class="btn btn-light" id="button">Dashboard</button>
+            </div>       
+            
+            <div class="contaienr" id="content">
+                <div class="container" id="bodyContent1">
+                  <div class="container" id="section1">
+                      <h3>Pending Orders</h3>
+                  </div>
+                  <div class="container" id="section1">
+                      <h3>Service Desk Tickets</h3>
+                  </div>
+                  <div class="contaienr" id="section1">
+                    <img src="https://www.investopedia.com/thmb/B46OG6Nu7dpYznCxAt4LwcClLYk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/8e28465dd04bdce2a96a06dee56483f3-5bfd7c3346e0fb00263e3450" id="chart">
+                </div>
+                </div>
+                <div class="container" id="bodyContent2">
+                    <div class="container" id="section2">
+                        <h3>Authors</h3>
+                </div>
+                    <div class="container" id="section2">
+                        <h3>Comapny News</h3>
+                    </div>
+                    <div class="container" id="section2">
+                        <img src="https://user-images.githubusercontent.com/1299646/47808707-f3892e80-dd0c-11e8-81c5-4eaa947ccdf1.png" id="chat">
+                    </div>
+                </div>
+                    <div class="container" id="bodyContent3">
+                        <div class="container" id="section3">
+                            <h3>Upcoming Releases</h3>
+                        </div>
+                    <div class="container" id="section3">
+                            <h3>Calendar of Events</h3>
+                    </div>
+                    <div class="container">
+                        <text class="masked-text">Books!</text>
+                    </div>
+                    </div>
+            </div>
+ 
+            <!-- Social Media links directly from Meta -->
+            <div class="container" id="footer">
+                <h5>Find Us on Social Media</h5>
+            </div>
+                <div class="contaienr" id="socialMedia">
+                <a href="https://www.facebook.com/" target="_blank"><img src="Facebook_Logo_Primary.png" id="fbLogo">
+                    </a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="Instagram_Glyph_Gradient.png" id="igLogo"></a>
+            </div>          
+        </div> 
+    </body>
+    </html>

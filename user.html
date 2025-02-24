@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Internal Styling -->
+    <style>
+        h1 {
+            font-family: 'Playwrite IT Moderna', serif;
+        }
+
+        h2, h4 {
+            font-family: 'Catamaran', serif;
+        }
+
+        #button {
+            width: 180px;
+        }
+
+        #button2 {
+            width: 100%;
+        }
+
+        #section1, #section2 {
+            background-color: #e28743;
+            border-radius: 5%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 400px;
+            height: 300px;
+            margin: 10px 10px 10px 10px;
+        }
+
+        #gifBook {
+            width: 70px;
+        }
+    </style>
+
+    <title>My Account</title>
+    <link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="container" id="main">
+        <div class="container" id="header">
+            <h1>Red Books</h1>
+            <h2>My Account</h2>
+         </div>
+         <div class="container" id="smallNavigation">
+            <button type="button" class="btn btn-light" id="button">Home</button>
+            <button type="button" class="btn btn-light" id="button">Books</button>
+            <button type="button" class="btn btn-light" id="button">Events</button>
+            <button type="button" class="btn btn-light" id="button">Reader Resources</button>
+            <!-- Inline Style -->
+            <button type="button" class="btn btn-light" id="button"><a style="text-decoration: none;color: black;" href="membership.html">Membership Sign-up</a></button>
+            <button type="button" class="btn btn-light" id="button"><a style="text-decoration: none;color: black;" href="user.html#">Account</a></button>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="button">
+                  About Us
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">About Red Books</a></li>
+                  <li><a class="dropdown-item" href="#">Careers at Red Books</a></li>
+                  <li><a class="dropdown-item" href="admin.html">Admin Dashboard</a></li>
+                </ul>
+              </div>
+        </div>
+        
+            <div class="container" id="navigation">
+            	<button type="button" class="btn btn-light" id="button2">Dashboard</button>
+            	<hr>
+            	<button type="button" class="btn btn-light" id="button2">Account Settings</button>
+            	<hr>
+            	<button type="button" class="btn btn-light" id="button2">Order History</button>
+            	<hr>
+            	<button type="button" class="btn btn-light" id="button2">Payment Methods</button>
+            	<hr>
+            	<button type="button" class="btn btn-light" id="button2">Digital Library</button>
+            	<hr>
+            	<button type="button" class="btn btn-light" id="button2">Favorites List</button>
+            	<hr>
+            <form>
+                <h5>Request Help</h5>
+                <div class="input-group  mb-3">
+                    <span class="input-group-text">Name</span>
+                    <input type="text" aria-label="name" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="E-mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2">@example.com</span>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Message</span>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>                
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>  
+            <div class="contaienr" id="test">
+              <div class="container" id="bodyContent1">
+                <div class="container" id="section1">
+                    <h3>Account Settings</h3>
+                </div>
+                <div class="container" id="section1">
+                    <h3>Order History</h3>
+                </div>
+            </div>
+        <div class="container" id="bodyContent2">
+            <div class="container" id="section2">
+                <h3>Payment Methods</h3>
+            </div>
+            <div class="container" id="section2">
+                <h3>Digital Library</h3>
+            </div>
+        </div>
+        <div class="contaienr" id="bodyContent3">
+            <div class="container"  id="section3">
+                <!-- gif -->
+                <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXpwb2FodzRrZjZ1MzQ3NWg1enJ6NTdibzFzaTh5dGQ2b3FmdXhwMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/324sEkye9F1NMIvogH/giphy.gif" id="gifBook">
+            </div>
+        </div>
+</div>     
+
+<!-- Tabe -->
+<h4>Favorites List Preview</h4>
+                <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Author</th>
+                            <th scope="col">Website</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Onyx Storm</td>
+                            <td>Rebecca Yarros</td>
+                            <td>rebeccayarros.com</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Scythe & Sparrow</td>
+                            <td>Bryne Weaver</td>
+                            <td>brynneweaverbooks.com</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Deep End</td>
+                            <td>Ali Hazelwood</td>
+                            <td>alihazelwood.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+   
+        
+        <!-- Social Media links directly from Meta -->
+        <div class="container" id="footer">
+            <h5>Find Us on Social Media</h5>
+        </div>
+            <div class="contaienr" id="socialMedia">
+            <a href="https://www.facebook.com/" target="_blank"><img src="C:\Users\Laura\Documents\Classwork\Facebook-Brand-Asset-Pack\Facebook Brand Asset Pack\Logo\Primary Logo\Facebook_Logo_Primary.png" id="fbLogo">
+                </a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="C:\Users\Laura\Documents\Classwork\IG_brand_asset_pack_2023\01 Static Glyph\01 Gradient Glyph\Instagram_Glyph_Gradient.png" id="igLogo"></a>
+        </div>          
+    </div> 
+</body>
+</html>

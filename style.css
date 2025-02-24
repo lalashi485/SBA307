@@ -1,0 +1,85 @@
+#header {
+    border: 1px solid #2596be;
+    background-color: #2596be;
+    height: auto;
+}
+
+#smallNavigation {
+    border: 1px solid #2596be;
+    background-color: #2596be;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 10px 10px 10px;
+}
+
+#navigation {
+    width: 300px;
+    height: 800px;
+    border: 1px solid #eab676;
+    background-color: #eab676;
+    padding: 10px 10px 10px 10px;
+    float: left;
+}
+
+/* Testing out how this wraps around the main content */
+#test {
+    display: flex;
+    border: 1px solid #abdbe3;
+    background-color: #abdbe3;
+    height: 800px;
+}
+
+/* Broke up the containers to make it look correct */
+#bodyContent1, #bodyContent2 {
+    border: 1px solid #abdbe3;
+    background-color: #abdbe3;
+    width: auto;
+}
+
+#form {
+    width: 900px;
+    height: 900px;
+    padding: 40px 30px 30px 30px;
+}
+
+h1, h2, h5 {
+    text-align: center;
+    color: white;
+}
+
+hr, h3 {
+    color: white;
+}
+
+#content {
+    border: 1px solid #abdbe3;
+    background-color: #abdbe3;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    height: 800px;
+}
+
+/* Broke up the containers to make it look correct */
+#footer {
+    border: 1px solid #154c79;
+    background-color: #154c79;
+    height: 40px;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;    
+}
+
+#fbLogo, #igLogo {
+    width: 30px;
+    height: 30px;
+}
+
+#socialMedia {
+    border: 1px solid #154c79;
+    background-color: #154c79;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
